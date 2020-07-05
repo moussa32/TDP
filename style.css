@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css?family=Alata&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Source+Sans+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap');
+
+@media (max-width:1046px){
+    #navbar{
+        width: 25vw!important;
+        
+    }
+    #main-doc{
+        margin-left: 25vw !important;
+    }
+}
+@media (max-width:815px){
+    body{
+        flex-direction: column !important;
+        overflow-x: hidden !important;
+    }
+    #navbar{
+        position: static !important;
+        width: 102% !important;
+        height: 50vh !important;
+        
+    }
+    #main-doc{
+        margin-left: 0 !important;
+        margin-top: 5rem !important;
+        position: static !important;
+    }
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+a{
+    text-decoration:none;
+}
+body{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: left;
+    padding: 10px;
+    outline: none;
+}
+header{
+    text-align: left;
+    font-weight: bold;
+    font-size: 1.4rem;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: capitalize;
+    margin: 1rem;
+    border-bottom: 1px #ddd solid;
+    padding: 0.3rem;
+    padding-left: 0;
+    margin-left: 0;
+}
+header::before{
+    font-family: FontAwesome;
+    content: '\f02e';
+    margin-right: 8px;
+    color: #f1c40f;
+}
+li{
+    margin: 2rem;
+    margin-left: 3rem;
+}
+li:first-child{
+    margin-top: 1rem;
+}
+li:last-child{
+    margin-bottom: 1rem;
+}
+p{
+    line-height: 1.5rem;
+    margin: 1.5rem 0;
+}
+p:first-child{
+    margin-top: 0;
+}
+code{
+    font-family: 'Roboto Mono', monospace;
+    text-align: left;
+    white-space: pre;
+    background: rgba(221, 221, 221, 0.3215686274509804);
+    padding: 0.5rem 1rem;
+    line-height: 2rem;
+    display: block;
+    margin-left: 1rem;
+    color: rgba(0, 0, 0, 0.65);
+    border-radius: 5px;
+    font-size: 0.8rem;
+}
+ol {
+    list-style: circle;
+}
+#navbar{
+    order: 1;
+    position: fixed;
+    height: 100%;
+    width: 300px;
+}
+#navbar> header{
+    text-align: center;
+    border: 0;
+}
+#navbar> header::before{
+    font-family: FontAwesome;
+    content: '\f2b9 ';
+    margin-right: 8px;
+    color: #3498db;
+}
+#cap{
+    text-transform: uppercase;
+}
+#documentation-items{
+    overflow-y: scroll;
+    text-transform:capitalize;
+    height: 100%;
+    list-style: none;
+}
+#documentation-items > li{
+    margin: 0;
+    padding: 0.5rem;
+    border-top: 1px #ddd solid;
+}
+#documentation-items > li::before{
+    font-family: FontAwesome;
+    content: '\f10c ';
+    margin-right: 8px;
+    color: #3498db;
+}
+#documentation-items > li:hover{
+    background: #ddd;
+    transition: 1s;
+}
+.nav-link{
+    color: #000;
+}
+#main-doc{
+    order: 2;
+    padding: 2rem;
+    width: inherit;
+    margin-left: 300px;
+    padding-top: 0.5rem;
+}
